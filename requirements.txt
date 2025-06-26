@@ -1,0 +1,10 @@
+# Requirements for the Network Security project
+seaborn
+requests
+python-dotenv
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+
