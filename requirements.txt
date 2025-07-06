@@ -6,5 +6,12 @@ numpy
 pandas
 matplotlib
 seaborn
+pymongo
+pymongo[srv]==3.12
+dotenv
+certifi
 scikit-learn
-
+ipykernel
+scipy
+pyyaml
+#-e .

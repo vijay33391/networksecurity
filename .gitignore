@@ -1,3 +1,5 @@
-network_venv
+# Ignore node_modules directory
+network_security_venv
 .env
+
 
