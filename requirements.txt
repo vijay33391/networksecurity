@@ -16,4 +16,6 @@ scipy
 pyyaml
 mlflow
 dagshub
+fastapi
+uvicorn
 #-e .
