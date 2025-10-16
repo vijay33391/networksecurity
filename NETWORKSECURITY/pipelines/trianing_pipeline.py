@@ -17,6 +17,7 @@ from NETWORKSECURITY.components.data_transformation import DataTransformation
 from NETWORKSECURITY.components.model_trainer import ModelTrainer
 from NETWORKSECURITY.exception.exception import NetworkSecurityException
 from NETWORKSECURITY.logging.logger import logging
+# import SimplePipelineRunner
 
 
 class TrainingPipeline:
@@ -80,7 +81,7 @@ class TrainingPipeline:
         except Exception as e:
             raise NetworkSecurityException(e, sys)
 
-
+'''
 # Entry point
 if __name__ == "__main__":
     try:
@@ -89,3 +90,5 @@ if __name__ == "__main__":
     except Exception as e:
         logging.error(f"Pipeline execution failed: {e}")
         raise NetworkSecurityException(e, sys)
+        '''
+ 

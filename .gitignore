@@ -1,5 +1,6 @@
 # Ignore node_modules directory
 network_security_venv
 .env
-
-
+logs/
+__pycache__/
+*.pyc

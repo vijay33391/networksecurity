@@ -45,8 +45,8 @@ from fastapi.templating import Jinja2Templates
 templates = Jinja2Templates(directory="./templates")
 
 @app.get("/", tags=["authentication"])
-async def index():
-    return RedirectResponse(url="/docs")
+async def index(request: Request):
+    return templates.TemplateResponse("index.html", {"request": request})
 
 @app.get("/train")
 async def train_route():
@@ -78,7 +78,7 @@ async def predict_route(request: Request,file: UploadFile = File(...)):
         df.to_csv('prediction_output/output.csv')
         # Converts the DataFrame into an HTML table using Bootstrap styling (table-striped).
         
-        table_html = df.to_html(classes='table table-striped')
+        table_html = df.to_html(classes='table table-striped',index=False,border=0)
         #print(table_html)
         return templates.TemplateResponse("table.html", {"request": request, "table": table_html})
         
