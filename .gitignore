@@ -3,4 +3,6 @@ network_security_venv
 .env
 logs/
 __pycache__/
+final_model/
+Artifacts/
 *.pyc
