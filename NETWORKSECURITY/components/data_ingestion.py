@@ -39,6 +39,7 @@ class DataIngestion:
             if "_id" in df.columns.to_list():
                 df=df.drop(columns=["_id"],axis=1)
             
+            # data cleaning: replacing na string values with np.nan
             df.replace({"na":np.nan},inplace=True)
             return df
         except Exception as e:
@@ -97,4 +98,4 @@ class DataIngestion:
             return dataingestionartifact
 
         except Exception as e:
-            raise NetworkSecurityException(e,sys)
+            raise NetworkSecurityException(e,sys) 

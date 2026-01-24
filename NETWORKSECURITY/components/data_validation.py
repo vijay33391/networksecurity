@@ -102,7 +102,7 @@ class DataValidation:
             # read the train and test data
             train_dataframe = self.read_data(file_path=train_file_path)
             test_dataframe = self.read_data(file_path=test_file_path)
-            
+             
             ## validate number of columns
 
             status=self.validate_number_of_columns(dataframe=train_dataframe)

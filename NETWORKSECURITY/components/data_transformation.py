@@ -14,9 +14,6 @@ from sklearn.impute import KNNImputer
 from sklearn.pipeline import Pipeline
 
 
-
-
-
 class DataTransformation:
     def __init__(self,data_validation_artifact:DataValidationArtifact,
                  data_transformation_config:DataTransformationConfig):
